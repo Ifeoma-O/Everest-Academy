@@ -1,0 +1,1482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(243, 169, 218);
+}
+
+::-webkit-scrollbar-track {
+  background-color: thistle;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track-piece:vertical:end {
+  background-color: rgb(252, 255, 71);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(153, 213, 248);
+  border-radius: 7px;
+}
+
+.logo img {
+  width: 65px;
+}
+
+.top {
+  width: 100%;
+  height: 100vh;
+  /*clip-path: polygon(
+    0 0,
+    15% 0%,
+    85% 0%,
+    100% 0,
+    100% 100%,
+    50% 92%,
+    0 100%,
+    0% 85%
+  );*/
+}
+
+.css3ad-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.css3ad-first,
+.css3ad-second,
+.css3ad-third,
+.css3ad-fourth,
+.css3ad-fifth {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+}
+
+.css3ad-first {
+  background: url("../images/back\ \(2\).jpg") no-repeat;
+  animation: cycle 25s linear infinite;
+  -webkit-animation: cycle 25s linear infinite;
+  background-size: cover;
+  color: rgb(255, 246, 252);
+}
+.css3ad-second {
+  background: url("../images/gallery4.jpg") no-repeat;
+  animation: cycletwo 25s linear infinite;
+  -webkit-animation: cycletwo 25s linear infinite;
+  background-size: cover;
+  color: rgb(226, 5, 197);
+}
+.css3ad-third {
+  background: url("../images/gallery12.jpg") no-repeat;
+  animation: cyclethree 25s linear infinite;
+  -webkit-animation: cyclethree 25s linear infinite;
+  background-size: cover;
+  color: rgb(218, 40, 55);
+}
+.css3ad-fourth {
+  background: url("../images/top\ \(5\).jpg") no-repeat;
+  animation: cyclefour 25s linear infinite;
+  -webkit-animation: cyclefour 25s linear infinite;
+  background-size: cover;
+  color: rgb(247, 204, 16);
+}
+.css3ad-fifth {
+  background: url("../images/gallery9.jpg") no-repeat;
+  animation: cyclefive 25s linear infinite;
+  -webkit-animation: cyclefive 25s linear infinite;
+  background-size: cover;
+  color: #33cfff;
+}
+
+.css3ad-first p,
+.css3ad-second p,
+.css3ad-third p,
+.css3ad-fourth p,
+.css3ad-fifth p {
+  width: 34%;
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 2.3rem !important;
+}
+
+@-webkit-keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  21% {
+    top: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: 0px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cycletwo {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  16% {
+    top: 0px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  41% {
+    top: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes cyclethree {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  36% {
+    top: 0px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+  }
+  61% {
+    top: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes cyclefour {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  56% {
+    top: 0px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  81% {
+    top: 0px;
+    z-index: -1;
+  }
+  100% {
+    top: 0px;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes cyclefive {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  76% {
+    top: 0px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+}
+
+header,
+.top {
+  animation: moveInBottom 0.4s ease-out 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.top p {
+  position: relative;
+  top: 62%;
+  margin: 0 5rem;
+  text-justify: auto;
+  font-size: 3rem;
+  font-family: Comic Sans MS;
+  font-weight: 200;
+}
+
+#main {
+  align-content: center;
+}
+
+.features {
+  margin-top: 3rem;
+  padding: 5rem 3rem 0 3rem;
+  display: flex;
+}
+
+.teach {
+  background-color: rgb(126, 23, 23);
+  width: 20rem;
+  color: #fff;
+  font-family: cursive;
+  border-radius: 19px;
+  margin-left: 6px;
+  text-align: center;
+  padding: 7px 7px 2rem 7px;
+  position: relative;
+  padding-top: 12vh;
+  margin: 0 3rem 0 3rem;
+  transition: transform 0.3s;
+}
+
+.teach .f-icon {
+  position: absolute;
+  top: -50px;
+  left: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.teach:hover {
+  transform: rotate(9deg);
+}
+
+.hr {
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  margin-bottom: 7px;
+  left: 40%;
+}
+
+.teach p {
+  padding-top: 10px;
+}
+
+.teach h2 {
+  padding-bottom: 7px;
+}
+
+.quality {
+  background-color: rgb(241, 210, 31);
+  width: 20rem;
+  color: #fff;
+  font-family: cursive;
+  border-radius: 19px;
+  margin-left: 6px;
+  text-align: center;
+  padding: 7px;
+  padding-bottom: 4vh;
+  position: relative;
+  padding-top: 12vh;
+  margin: 0 3rem 0 3rem;
+  transition: transform 0.3s;
+}
+
+.quality:hover {
+  transform: rotate(9deg);
+}
+
+.quality .f-icon {
+  position: absolute;
+  top: -50px;
+  left: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.quality p {
+  padding-top: 10px;
+}
+
+.quality h2 {
+  padding-bottom: 7px;
+}
+
+.facilities {
+  background-color: #171f8d;
+  width: 20rem;
+  color: #fff;
+  font-family: cursive;
+  border-radius: 19px;
+  margin-left: 6px;
+  text-align: center;
+  padding: 7px;
+  padding-bottom: 4vh;
+  position: relative;
+  padding-top: 12vh;
+  margin: 0 3rem 0 3rem;
+  transition: transform 0.3s;
+}
+
+.facilities:hover {
+  transform: rotate(9deg);
+}
+
+.facilities .f-icon {
+  position: absolute;
+  top: -50px;
+  left: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.facilities p {
+  padding-top: 10px;
+}
+
+.facilities h2 {
+  padding-bottom: 7px;
+}
+
+@font-face {
+  font-family: Sniglet;
+  src: url(../font/Sniglet-Regular.ttf);
+}
+
+.quote {
+  background-image: linear-gradient(to bottom, #700766, #9d5cd3);
+  margin: 5rem 1rem 0 2rem;
+  padding: 3rem;
+  font-family: French Script MT;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.5rem #00000060;
+}
+
+.schstaff {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+.schstaff h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "sniglet", cursive;
+  font-weight: 400;
+}
+
+.schstaff p:not(:first-child) {
+  color: #6b0a61;
+}
+
+.staff {
+  display: inline-flex;
+  margin: 2rem 4rem 0 5.2rem;
+}
+
+.teacher {
+  margin: 0.7rem 5.5rem 2rem 0;
+}
+
+.teacher p {
+  font-family: cursive;
+  font-weight: 900;
+  text-align: center;
+  font-size: 19px;
+}
+
+.teacher img {
+  width: 200px;
+  height: 29vh;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  margin-top: 1rem;
+}
+
+.teacher img:hover {
+  transform: translateY(-0.7rem) scale(1.07);
+}
+
+.teacher h2 {
+  text-align: center;
+}
+
+.schoolnews {
+  margin: 0 2.5rem 2rem 2.5rem;
+  padding: 1rem 0;
+}
+
+.schnews {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.schnews span {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0.7rem 0.3rem 1rem 0.3rem;
+  font-family: "sniglet", cursive;
+  font-weight: 400;
+}
+
+.schoolnews h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "sniglet", cursive;
+  font-weight: 400;
+}
+
+.news {
+  background-color: #9ee1f5;
+  color: #000;
+  margin: 2rem 4rem;
+  padding: 1rem;
+  transition: transform 0.3s;
+  border-radius: 7px;
+  width: 255px;
+}
+
+.news:hover {
+  transform: translatey(0.7rem) scale(0.9);
+}
+
+.news p {
+  padding-top: 1rem;
+}
+
+footer {
+  background: url(../images/footer.jpg) no-repeat;
+  background-color: rgba(0, 0, 0, 0.575);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-content {
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.hrule {
+  width: 8vw;
+  background-color: #fff;
+  height: 1.1px;
+}
+.location {
+  color: #fff;
+  margin-left: 1rem;
+  border-right: solid 0.1rem rgb(255, 255, 255);
+  width: 27%;
+  padding: 0 4rem;
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.phone-email {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+#footer_logo img {
+  height: 10vh;
+  margin: 1rem 0 0.7rem 35rem;
+}
+
+.icon {
+  display: none;
+}
+
+.social {
+  color: #fff;
+  width: 25%;
+  padding: 0 2.1rem;
+  border-right: solid 0.1rem rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.icons {
+  display: flex;
+  padding: 0;
+  margin-top: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.icofont {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0 0.7rem;
+  border-radius: 40px;
+  border: solid 2px rgb(247, 192, 228);
+  font-size: 2.5rem;
+  color: rgb(245, 187, 226);
+}
+
+.partners {
+  width: 45%;
+  color: #fff;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.partners-img img {
+  padding: 1rem 0.8rem 0 0.8rem;
+  height: 90px;
+  width: 130px;
+}
+
+.footer_text {
+  color: #fff;
+  text-align: center;
+  font: 1rem sans-serif;
+  padding-top: 1.5rem;
+}
+
+/**contact us page**/
+
+.main-contact {
+  width: 100%;
+}
+
+.paragraph {
+  background: url(../images/board.jpg);
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 40vh;
+  font-family: cursive;
+  font-size: 1.5rem;
+  color: rgb(209, 217, 252);
+  text-justify: auto;
+  padding: 4rem 9rem 3rem 9rem;
+}
+
+.paragraph h1 {
+  margin-top: 2rem;
+}
+
+.contact_us {
+  margin: 3rem 0 3rem 21rem;
+  padding: 3rem 3rem 2rem 3rem;
+  box-shadow: 0.1rem 0.09rem 0.6rem 0.03rem rgb(91, 91, 122);
+  width: 40%;
+}
+
+.contact {
+  display: flex;
+  width: 85%;
+  margin: 0 0 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+#form {
+  width: 100%;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.icofontForm {
+  margin: 1rem 0.7rem;
+  font-size: 1.2rem;
+}
+
+input.valid {
+  border-color: #33cc33;
+}
+input.invalid {
+  border-color: orange;
+}
+input {
+  width: 70%;
+  padding: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: 0.5px solid;
+  margin-bottom: 1rem;
+}
+input + p {
+  opacity: 0;
+  margin: 0.2rem 0;
+}
+input.invalid + p {
+  opacity: 1;
+  color: orange;
+  margin: 0.5rem 0;
+}
+
+.err {
+  color: red;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  margin-top: -1.8rem;
+  margin-left: 4rem;
+  display: none;
+}
+
+.comment {
+  margin-top: 1rem ;
+  width: 110%;
+}
+
+
+
+#comment-box{
+  margin: .5rem 1rem;
+}
+
+textarea {
+  padding: 1rem;
+  resize: none;
+  border-radius: 2rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.582);
+}
+
+button,
+button:visited,
+button:link {
+  cursor: pointer;
+  padding: 1rem 1.3rem;
+  border-radius: 10rem;
+  border: none;
+  transition: all 0.3s;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+button:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+  box-shadow: 0.1rem 0.09rem 0.2rem 0.03rem rgb(91, 91, 122);
+  background-color: rgb(29, 39, 167);
+  color: #fff;
+}
+
+button:active,
+button:focus {
+  outline: none;
+  transform: translateY(-0.1px);
+  box-shadow: 0 0.5rem 1rem #333;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.4s ease-out 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+div h3 {
+  float: left;
+  display: block;
+  color: #fff;
+  margin: 1.2rem;
+}
+
+/* header */
+.topnav {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  margin: 0 0 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+nav {
+  float: left;
+  margin-left: 3rem;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  opacity: 0.6;
+  margin: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a:hover {
+  opacity: 1;
+}
+
+/*about us page*/
+
+.about {
+  background: url(../images/aboutUs.jpg);
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 40vh;
+  font-family: cursive;
+  font-size: 1.4rem;
+  color: rgb(210, 239, 248);
+  text-justify: auto;
+  padding: 4rem 9rem 3rem 9rem;
+}
+
+.about h1 {
+  margin-top: 2rem;
+}
+
+.exec {
+  margin: 4rem 0;
+}
+
+.exec h1 {
+  font-size: 2.5rem;
+  font-family: cursive;
+  text-align: center;
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+
+.exec h2 {
+  color: rgb(0, 17, 255);
+  font-family: cursive;
+  margin: 1rem;
+}
+
+.officers {
+  margin: 0 8rem;
+  color: black;
+  height: 200px;
+}
+
+.officers img {
+  width: 25%;
+  height: 90%;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.officerspara {
+  padding: 0 2rem;
+  font-family: cursive;
+  font-size: 1em;
+}
+
+.owner {
+  float: left;
+}
+
+.owner img {
+  float: left;
+margin-right: 1rem;
+}
+
+#ownerpara {
+  text-align: left;
+}
+
+.board {
+  float: right;
+}
+
+.board img {
+  float: right;
+margin-left: 1rem;
+}
+
+#boardpara {
+  text-align: right;
+}
+
+.principal {
+  float: left;
+}
+
+.principal img {
+  float: left;
+margin-right: 1rem;
+}
+
+#principalpara {
+  text-align: left;
+}
+
+.history {
+  margin: 1rem 3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-family: cursive;
+  font-size: 1em;
+}
+
+.history h1 {
+  text-align: center;
+  color: rgb(0, 17, 255);
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.mission-vision {
+  font-size: 1.2rem;
+  padding: 2rem;
+  display: flex;
+  font-family: Dubai Medium;
+  margin: 4rem 1rem;
+  color: #fff;
+}
+
+.mission-vision h2 {
+  text-align: center;
+}
+
+.mission {
+  margin: 2rem;
+padding: 2rem;
+  background-color: #530792;
+  width: 50%;
+}
+
+.vision {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #530792;
+  width: 50%;
+}
+
+/*gallery*/
+
+.gallery {
+  background: url(../images/back4.jpg);
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 40vh;
+  font-family: cursive;
+  font-size: 1.4rem;
+  color: rgb(210, 239, 248);
+  text-justify: auto;
+}
+
+.gallery-h1{
+padding-top: 5rem;
+}
+
+
+.slider {
+  overflow: hidden;
+  margin: 9rem;
+}
+
+.slider figure {
+  position: relative;
+  width: 2000%;
+  left: 0;
+  animation: 90s slider infinite;
+}
+
+.slide {
+  width: 5%;
+  height: 90vh;
+  float: left;
+}
+
+/*tablet view*/
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .topnav.responsive {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    display: block;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 0.7rem;
+    margin: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    padding: .5rem;
+    background-color: #6b0a61;
+  }
+
+  .topnav.responsive a:hover {
+    background-color: yellow;
+  }
+  /* .topnav.responsive a:not(:last-child) {
+    margin: 3rem 0 -3rem 0;
+  }*/
+  .topnav.responsive a:nth-child(1) {
+    margin-top: 3.2rem;
+  }
+
+  .css3ad-first p,
+  .css3ad-second p,
+  .css3ad-third p,
+  .css3ad-fourth p,
+  .css3ad-fifth p {
+    width: 47%;
+    background-color: rgba(0, 0, 0, 0.568);
+    font-size: 1.5rem !important;
+  }
+  .features {
+    display: block;
+  }
+
+  .teach {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 7rem;
+  }
+
+  .quality {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 7rem;
+  }
+
+  .facilities {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 7rem;
+  }
+
+  .teach .f-icon {
+    position: absolute;
+    left: 37%;
+  }
+
+  .quality .f-icon {
+    left: 37%;
+  }
+
+  .facilities .f-icon {
+    left: 37%;
+  }
+
+  .schoolnews {
+    margin: 1rem 2rem;
+  }
+  .schnews {
+    margin: 1rem 4.7rem;
+    display: block;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+  .schstaff {
+    padding: 3rem 1rem 1rem 1rem;
+    margin: auto;
+  }
+
+  .schstaff p {
+    font-size: 2rem;
+  }
+
+  .staff {
+    margin: 1rem 6rem;
+    padding: 0 1rem;
+    display: block;
+  }
+
+  .schstaff h2 {
+    font-size: 2.5rem;
+  }
+
+  .teacher {
+    padding: 0 1.4rem;
+    margin: 2rem 1.5rem;
+  }
+
+  .teacher p {
+    font-size: 15px;
+  }
+
+  .teacher img {
+    width: 250px;
+    height: 45vh;
+  }
+
+  .footer-content {
+    display: block;
+    margin-top: 2rem;
+  }
+  .hrule {
+    display: none;
+  }
+  .location {
+    margin: 0 6rem;
+    border: none;
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .social {
+    border: none;
+  }
+  .icons {
+    margin: 3rem 9rem;
+  }
+
+  .partners {
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .partners-img img {
+    padding: 1rem 0.8rem 0 0.8rem;
+    height: 90px;
+    width: 130px;
+  }
+
+  .footer_text {
+    color: #fff;
+    text-align: center;
+    font: 1rem sans-serif;
+    padding-top: 1.5rem;
+  }
+
+/*about us*/
+
+  .exec h1 {
+    font-size: 2rem;
+  }
+
+  .about {
+    font-size: 1.4rem;
+    padding: 4rem 5rem;
+  }
+
+  .history h1 {
+    font-size: 2rem;
+  }
+
+  .history {
+    margin: 1rem 2rem;
+    font-size: 1em;
+  }
+
+
+.officers {
+  display: block; 
+  min-width: 100%;
+  margin: 2rem 1rem 2rem 0;
+  height: auto;
+}
+
+  .officers img {
+    float: none;
+    width: 40%;
+    height: 50%;
+    margin: 0 10rem;
+  }
+
+  .officerspara {
+    padding: 0 2rem;
+    margin: 0 1rem;
+    font-family: cursive;
+    font-size: 1rem;
+  }
+
+  #boardpara{
+    text-align: left;
+}
+
+  .officerspara h2 {
+    text-align: center;
+  }
+
+.mission-vision {
+  font-size: 1.2rem;
+  display: inline-block;
+  font-family: Dubai Medium;
+  background-color: #fff;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+  .mission-vision h2 {
+    text-align: center;
+  }
+
+  .mission {
+    margin: 1rem 0 4rem 0;
+    background-color: #530792;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .vision {
+    margin: 1rem 0 4rem 0;
+    background-color: #530792;
+    padding: 2rem;
+    width: 100%;
+  }
+
+/*gallery*/
+
+.slider {
+  margin: 2rem;
+}
+
+.slide{
+height: 60vh;
+}
+
+.paragraph{
+font-size: .9rem;
+padding: 5rem  1rem ;
+}
+
+/*contact us*/
+
+.contact_us {
+  margin: 3rem 0 3rem 2rem;
+  padding: 3rem 3rem 2rem 3rem;
+  box-shadow: 0.1rem 0.09rem 0.6rem 0.03rem rgb(91, 91, 122);
+  width: 87%;
+}
+
+.comment span{
+font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 500; 
+margin: 0 6rem;
+}
+
+}
+
+/*mobile phone*/
+
+@media screen and (max-width: 450px) {
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .css3ad-first p,
+  .css3ad-second p,
+  .css3ad-third p,
+  .css3ad-fourth p,
+  .css3ad-fifth p {
+    width: 65%;
+  }
+
+  .teach .f-icon {
+    position: absolute;
+    left: 34%;
+  }
+
+  .quality .f-icon {
+    left: 34%;
+  }
+
+  .facilities .f-icon {
+    left: 34%;
+  }
+
+  .staff {
+    margin: 1rem 2.5rem;
+    padding: 0 1rem;
+    display: block;
+  }
+
+  .teacher {
+    padding: 0 1.4rem;
+    margin: 2rem 1.5rem;
+  }
+
+  .teacher p {
+    font-size: 18px;
+  }
+
+  .teacher img {
+    width: 200px;
+    height: 37vh;
+  }
+
+  .schoolnews {
+    margin: 1rem;
+  }
+  .schnews {
+    margin: 1rem 3rem;
+    display: block;
+  }
+
+  .news {
+    margin: 2rem;
+  }
+
+  .location {
+    margin: 0 3rem;
+    border: none;
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .icons {
+    margin: 3rem 4rem;
+  }
+
+  .partners-img img {
+    padding: 1rem 0.8rem 0 0.8rem;
+    height: 70px;
+    width: 100px;
+  }
+
+  /*about us*/
+
+  .about {
+    font-size: 1rem;
+    padding: 4rem 5rem;
+  }
+
+  .history h1 {
+    font-size: 2rem;
+  }
+
+  .history {
+    margin: 1rem 2rem;
+    font-size: 1em;
+  }
+
+  .exec h1 {
+    font-size: 2rem;
+  }
+
+  .officers {
+  display: block; 
+  min-width: 100%;
+  margin: 2rem 1rem 2rem 0;
+  height: auto;
+}
+
+  .officers img {
+    float: none;
+    width: 60%;
+    height: 50%;
+    margin: 0 5.7rem;
+  }
+
+  .officerspara {
+    padding: 0 2rem;
+    margin: 0 1rem;
+    font-family: cursive;
+    font-size: 1rem;
+  }
+
+  #boardpara{
+    text-align: left;
+}
+
+
+  .officerspara h2 {
+    text-align: center;
+  }
+
+.mission-vision {
+  font-size: 1.2rem;
+  display: inline-block;
+  font-family: Dubai Medium;
+  background-color: #fff;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+  .mission-vision h2 {
+    text-align: center;
+  }
+
+  .mission {
+    margin: 2rem 0;
+    background-color: #530792;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .vision {
+    margin: 2rem 0;
+    background-color: #530792;
+    padding: 2rem;
+    width: 100%;
+  }
+
+/*gallery*/
+
+.slider {
+  margin: 2rem;
+}
+
+.slide{
+height: 50vh;
+}
+
+/*contact us*/
+
+.paragraph{
+font-size: .9rem;
+padding: 5rem  1rem ;
+}
+
+.contact_us {
+  margin: 3rem 0 3rem 2rem;
+  padding: 3rem 3rem 2rem 3rem;
+  box-shadow: 0.1rem 0.09rem 0.6rem 0.03rem rgb(91, 91, 122);
+  width: 87%;
+}
+
+.comment span{
+font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 500; 
+margin: 0 6rem;
+}
+
+}
