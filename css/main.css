@@ -511,6 +511,8 @@ header,
   font-weight: 400;
 }
 
+
+
 .schoolnews h2 {
   text-align: center;
   font-size: 3rem;
@@ -542,6 +544,7 @@ footer {
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
+  padding: 1rem 0
 }
 
 .footer-content {
@@ -570,17 +573,12 @@ footer {
   margin-top: 1rem;
 }
 
-#footer_logo img {
-  height: 10vh;
-  margin: 1rem 0 0.7rem 35rem;
-}
-
 .icon {
   display: none;
 }
 
 .social {
-  color: #fff;
+  color: rgb(61, 43, 43);
   width: 25%;
   padding: 0 2.1rem;
   border-right: solid 0.1rem rgb(255, 255, 255);
@@ -1136,7 +1134,12 @@ padding-top: 5rem;
     height: 45vh;
   }
 
+footer{
+padding: 1rem 0;
+}
+
   .footer-content {
+    text-align: center;
     display: block;
     margin-top: 2rem;
   }
@@ -1144,17 +1147,20 @@ padding-top: 5rem;
     display: none;
   }
   .location {
-    margin: 0 6rem;
     border: none;
-    width: 80%;
+    width: 100%;
+margin: 0;
     font-size: 20px;
   }
 
   .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     border: none;
   }
   .icons {
-    margin: 3rem 9rem;
+    margin: 3rem ;
   }
 
   .partners {
@@ -1324,15 +1330,15 @@ margin: 0 6rem;
     left: 34%;
   }
 
+
   .staff {
-    margin: 1rem 2.5rem;
-    padding: 0 1rem;
-    display: block;
+    margin: 2rem 6rem;
+    padding: 0;
   }
 
   .teacher {
-    padding: 0 1.4rem;
-    margin: 2rem 1.5rem;
+    padding: 0;
+    margin: 2rem 0;
   }
 
   .teacher p {
@@ -1345,21 +1351,31 @@ margin: 0 6rem;
   }
 
   .schoolnews {
-    margin: 1rem;
+    margin: 0 6rem;
   }
+
+.schoolnews h2{
+display: block;
+font-size: 2.5rem;
+}
+
   .schnews {
-    margin: 1rem 3rem;
+    margin: 0;
     display: block;
   }
 
   .news {
-    margin: 2rem;
+    margin: 2rem 0;
   }
 
-  .location {
-    margin: 0 3rem;
+footer{
+padding: 1rem 0;
+}
+
+ .location {
+    margin: 0;
     border: none;
-    width: 80%;
+    width: 100%;
     font-size: 20px;
   }
 
